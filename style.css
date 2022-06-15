@@ -1,0 +1,146 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-image: url(images/bg-pattern-bottom-desktop.svg), url(images/bg-pattern-top-desktop.svg);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.reviews :nth-child(2) {
+top: 20px;
+}
+.reviews :nth-child(3) {
+top: 40px;
+}
+.section-reviews :first-child {
+    right: 40px;
+}
+.section-reviews :nth-child(2) {
+    right: 20px;
+}
+
+.section-heading h1 {
+    font-size: 4rem;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+.section-heading p {
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: hsl(303, 10%, 53%);
+}
+
+.main-section {
+    margin: auto;
+    margin-top: 50px;
+    width: 1024px;
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
+}
+.section-heading {
+    width: 400px;
+}
+.rating {
+    display: flex;
+    width: 350px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: hsl(300, 24%, 96%);
+    justify-content: center;
+    position: relative;
+}
+.rating p {
+    margin-left: 20px;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    padding: 15px;
+    
+
+}
+.card-img{
+    overflow: hidden;
+    width: 9vh;
+    height: 9vh;
+    border-radius: 100px;
+}
+.card h2 {
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.card h3 {
+    font-size: 0.9rem;
+    color: hsl(333, 80%, 67%);
+    font-weight: 100;
+}
+.card p {
+    color: white;
+    font-weight: 200;
+    line-height: 1.5rem;
+}
+
+.card-author{
+    display: flex;
+}
+.card-author-name {
+    margin-left: 20px;
+}
+.card-content {
+    margin-top: 15px;
+}
+
+.reviews {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 375px) {
+
+    .card-info {
+        display: block;
+        text-align: center;
+    }
+    .rating{
+        display: block;
+        text-align: center;
+    }
+    .reviews {
+        display: block;
+    }
+    .reviews .card {
+        margin: 10px;
+    }
+  .main-section {
+      width: fit-content;
+  }
+  .reviews :nth-child(2) {
+    top: 0px;
+    }
+    .reviews :nth-child(3) {
+    top: 0px;
+    }
+    .section-reviews :first-child {
+        right: 0px;
+    }
+    .section-reviews :nth-child(2) {
+        right: 0px;
+    }
+}
+
+
