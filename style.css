@@ -73,9 +73,9 @@ top: 40px;
 }
 .card-img{
     overflow: hidden;
-    width: 9vh;
-    height: 9vh;
-    border-radius: 100px;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
 }
 .card h2 {
     font-size: 1rem;
@@ -110,7 +110,7 @@ top: 40px;
     margin-top: 50px;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 775px) {
 
     .card-info {
         display: block;
